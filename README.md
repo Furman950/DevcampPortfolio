@@ -12,7 +12,7 @@ sudo service postgresql start
 
 To generate a new rails application, the command is:
 
-```
+````
 rails new AppName -T --database=postgresql
 ```
 
