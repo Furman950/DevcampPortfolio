@@ -17,7 +17,7 @@ class PortfoliosController < ApplicationController
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
       else
-        format.html { render :new }
+        format.html { render :new, notice: 'You portfolio item failed to save' }
       end
     end
   end
