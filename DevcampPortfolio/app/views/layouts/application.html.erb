@@ -15,7 +15,7 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-    
+          
           <%= video_tag(
               'HardDrivePhotojpeg.mp4',
               id: 'background',
@@ -30,10 +30,11 @@
           
           <%= yield %>
           
-          <%= source_helper("application") %>
-          
           <%= render "shared/application_footer"%>
           
+          <%= source_helper("application") %>
+
+          <%= render 'shared/alerts' %>          
         </div>
       </div>
     </div>
