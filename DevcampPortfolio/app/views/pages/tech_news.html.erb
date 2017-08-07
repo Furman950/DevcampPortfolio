@@ -1,9 +1,9 @@
-<div class="inner cover">
+<div class="inner cover bla">
   <h1 class="cover-heading">Rails News</h1>
   
   <div class="row">
     <% @tweets.each do |tweet| %>
-      <div class="col-me-6">
+      <div class="col-md-6">
         <div class="tech-news">
           <div class="card">
             <%= twitter_parser tweet %>
@@ -13,5 +13,3 @@
     <% end %>
   </div>
 </div>
-
-
